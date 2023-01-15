@@ -326,6 +326,10 @@ li{
         display: block;
     }
 
+    .row2-divs{
+        margin-bottom: 20px;
+    }
+
     .nav{
         display: block;
         justify-content: left;
@@ -367,10 +371,13 @@ li{
     }
     .section5{
         display: block;
-        justify-content: center;
+        margin-left: 25%;
+        width: 50%;
         align-items: center;
-        margin-left: 0%;
-        margin-right: 0%;
+    }
+
+    .space{
+        margin-bottom: 20px;
     }
 
     .sponsor-details{
@@ -396,9 +403,17 @@ li{
     }
 
     .btn-div{
+        margin-left:auto;
+        margin-right: auto;
         margin-top: 800px;
-        width: 700px;
+        width: 100%;
         justify-content: left;
+    }
+
+    .btn2{
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
     }
     grid-container{
         grid-template-columns: 1fr;
