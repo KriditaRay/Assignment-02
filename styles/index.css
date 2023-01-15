@@ -10,7 +10,7 @@ header{
 }
 
 main{
-    margin-top: 80px;
+    margin-top: 120px;
 }
 
 .section2{
@@ -27,7 +27,7 @@ main{
 .section3{
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 100px;
+    margin-top: 150px;
     display:grid;
     grid-template-columns: repeat(2,1fr);
     gap: 100px;
@@ -47,7 +47,38 @@ main{
     display:grid;
     grid-template-columns: repeat(5,1fr);
     gap: 100px;
+}
 
+.sponsor-details{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 100px;
+}
+
+article{
+    height: 200px;
+    width: 400px;
+    display: grid;
+    grid-template-rows: 5;
+    margin-bottom: 100px;
+}
+
+article p{
+    color: rgb(124, 120, 120);
+}
+
+article:hover{
+    font-size: 110%;
+    background-color: rgb(254, 222, 162);
+    border-radius: 5px;
+}
+
+.article-right{
+    float:right;
+}
+
+.article-center{
+    margin: auto;
 }
 
 .row1{
@@ -60,8 +91,9 @@ main{
     margin-right: 10%;
     display:grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 10%;
+    gap: 8%;
 }
+
 
 .row2-divs{
     padding-top: 20%;
@@ -73,6 +105,14 @@ main{
     justify-content: center;
     border: 1px solid orange;
     border-radius: 5px;
+}
+
+/* Added animation to the sponsor icons upon hovering cursor */
+.row2-divs:hover{
+    background-color: rgb(251, 215, 148);
+    transition: transform 0.2s ease-in;
+    /* border-radius: 50%; */
+    font-size: 150%;
 }
 
 .row2-divs img{
@@ -169,12 +209,12 @@ h1{
     display: flex;
     align-items:center;
     justify-content:right;
-    padding-right: 40%;
+    padding-right: 38%;
 }
 
 .btn2{
     height: 150px;
-    width: 22%;
+    width: 24%;
     border-radius: 5px;
     background-color:orange;
     color: white;
@@ -184,6 +224,7 @@ h1{
 
 .div1 p{
     color: rgb(123, 120, 120);
+
 }
 
 .div1{
@@ -208,10 +249,175 @@ li{
 
 
 .footer{
+    color: rgb(128, 126, 126);
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-top: 100px;
-    background-color: bisque;
+    background-color: rgb(249, 229, 206);
     height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+
+/* Responsive for phone */
+.nav1{
+    grid-area: nav1;
+}
+
+.nav2{
+    grid-area: nav2;
+}
+
+.div1{
+    grid-area: div1;
+}
+
+.div2{
+    grid-area: div2;
+}
+
+.section2{
+    grid-area: section2;
+}
+
+.section3{
+    grid-area: section3;
+}
+
+.btn-div{
+    grid-area: btn-div;
+}
+
+.row1{
+    grid-area: row1;
+}
+
+.row2{
+    grid-area: row2;
+}
+
+.div3{
+    grid-area: div3;
+}
+
+.section5{
+    grid-area: section5;
+}
+
+.sponsor-details{
+    grid-area:sponsor-details;
+}
+
+.footer{
+    grid-area: footer;
+}
+
+
+@media screen and (max-width: 576px){
+
+    .row1{
+        width: 100%;
+    }
+
+    .row2{
+        display: block;
+    }
+
+    .nav{
+        display: block;
+        justify-content: left;
+        margin-bottom: 100px;
+
+
+        /* display: flex;
+        justify-content: space-between;
+        margin-bottom: 100px; */
+    }
+
+    .nav2{
+        display: block;
+    }
+
+    .col1{
+        display: block;
+    }
+
+    .section1{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .section2{
+        margin-left: 0%;
+        margin-right: 0%;
+        display: block;
+    }
+    .section3{
+        display:block;
+        margin-top: 1500px;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .section4{
+        display: block;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+    .section5{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .sponsor-details{
+        display: block;
+        margin-left: 0%;
+        margin-right: 0%;
+    }
+
+    .footer{
+        margin-left: 0%;
+        margin-right: 0%;
+        text-align: center;
+    }
+
+    .article-right{
+        float: none;
+    }
+
+    article{
+        flex: none;
+        width:100%;
+        height: 100%;
+    }
+
+    .btn-div{
+        margin-top: 800px;
+        width: 700px;
+        justify-content: left;
+    }
+    grid-container{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "nav1"
+        "nav2"
+        "div1"
+        "div2"
+        "section2"
+        "section3"
+        "btn-div"
+        "row1"
+        "row2"
+        "div3"
+        "section5"
+        "sponsor-details"
+        "footer"
+        ;
+    }
+} 
+
+
